@@ -51,7 +51,6 @@ ul {
   margin: 0 auto;
 }
 
-
 /* NAVIGATION */
 
 .nav__container {
@@ -89,7 +88,6 @@ ul {
   color: #6415ff;
 }
 
-
 .nav__link {
   color: #243e63;
   font-size: 14px;
@@ -104,7 +102,7 @@ ul {
   text-decoration: underline;
   text-underline-offset: 8px;
   text-decoration-thickness: 2px;
-  transition:all 300ms ease;
+  transition: all 300ms ease;
 }
 
 .nav__link--header1 {
@@ -120,6 +118,7 @@ ul {
 }
 .nav__link--header2:hover {
   color: rgb(237 242 247);
+  font-size: 14.5px;
   background-color: rgb(80 17 204);
   text-decoration: none;
 }
@@ -128,13 +127,11 @@ ul {
 Landing Section
  */
 
-
 .landing__container {
   padding: 96px 0;
   display: flex;
   margin: 0 auto;
 }
-
 
 .landing__container--left {
   display: flex;
@@ -142,11 +139,11 @@ Landing Section
   width: 40%;
 }
 
-.landing__container--right{
+.landing__container--right {
   width: 60%;
 }
 
-.landing__container--img{
+.landing__container--img {
   width: 100%;
 }
 
@@ -158,6 +155,7 @@ Landing Section
   font-size: 18px;
   color: #243e63;
   margin: 32px 0;
+  width: 100%;
 }
 
 .landing__email {
@@ -173,12 +171,19 @@ Landing Section
   color: rgba(211, 211, 211, 0.377);
   padding: 20px 192px 20px 32px;
   width: 100%;
-  opacity: .5;
+  opacity: 0.5;
   transition: all 300ms ease;
 }
 
-.landing__email--input:hover{
-  border-color: rgb(46, 46, 46);
+input[type="email"]:focus {
+  color: #243e63;
+  border-color: #6415ff;
+  opacity: 0.9;
+  font-weight: 500;
+}
+
+.landing__email--input:hover {
+  border-color: #243e63;
 }
 
 .landing__email--btn {
@@ -195,42 +200,45 @@ Landing Section
   border: none;
   top: 0px;
   right: 64px;
+  transition: all 300ms ease;
 }
 
 .landing__email--btn:hover {
   color: rgb(237 242 247);
   background-color: rgb(80 17 204);
+  font-size: 16.5px;
 }
 
-.landing__customers--container{
+.landing__customers--container {
   margin-top: 80px;
 }
 
-.landing__customers{
+.landing__customers {
   font-size: 12px;
-  color: #A0AEC0;
+  color: #a0aec0;
   font-weight: 700;
 }
 
-.landing__customers--img{
+.landing__customers--img {
   margin: 16px 0 0 0;
   padding: 0 128px 0 0;
-  width: 100%;opacity: .5;
+  width: 100%;
+  opacity: 0.5;
 }
 
 /* Features */
 
-
-.features__container{
+.features__container {
   padding: 80px 0;
   align-items: center;
 }
 
-.features__box--container{
+.features__box--container {
   display: flex;
   flex-wrap: wrap;
-
+  padding-top: 64px;
 }
-.features__box{
-  width: calc(100%/3);
+.features__box {
+  width: calc(100% / 3);
+  display: flex;
 }
