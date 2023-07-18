@@ -229,8 +229,9 @@ input[type="email"]:focus {
 
 .features__container {
   padding: 80px 0;
-  align-items: center;
-  margin: 0 107.5px;
+  align-content: stretch;
+  justify-content: center;
+  padding: 96px 0;
 }
 
 .features__title--container {
@@ -247,8 +248,11 @@ input[type="email"]:focus {
 }
 
 .features__description {
+  color: #243e63; 
   font-size: 48px;
   font-weight: 900;
+  letter-spacing: .025em;
+
 }
 
 .features__para {
@@ -260,10 +264,17 @@ input[type="email"]:focus {
 
 .features__box--container {
   display: flex;
+  width: 100%;
   flex-wrap: wrap;
   padding-top: 64px;
 }
 .features__box {
+  display: flex;
+  padding: 32px 8px;
+  margin: 0 16px;
+}
+
+.features__box--outer {
   width: calc(100% / 3);
   display: flex;
   padding: 32px 8px;
