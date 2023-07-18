@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto:wght@300;400;500;700&display=swap");
-
+/* get more font sizes */
 /* Default */
 
 * {
@@ -9,20 +9,18 @@
   font-family: "inter", sans-serif;
 }
 
-main{
+body {
   padding: 32px;
   overflow-x: hidden;
-  display: flex;
-  justify-content: center;
 }
 
-.wrapper{
+.wrapper {
   width: 100vw;
   overflow-x: hidden;
 }
 
 a,
-button{
+button {
   text-decoration: none;
   cursor: pointer;
 }
@@ -39,37 +37,35 @@ ul {
   list-style-type: none;
 }
 
-.container{
-  padding: 96px 0;
-}
+/* img{
+  width: 100%;
+} */
 
-.purple{
-  color: #6415FF;
+.purple {
+  color: #6415ff;
 }
 
 .row {
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  align-items: center;
-}
-
-#landing{
-  
 }
 
 
 /* NAVIGATION */
 
-nav .row {
+.nav__container {
   display: flex;
+  max-height: 48px;
+  height: 100%;
   justify-content: space-between;
+  align-items: center;
 }
 
 .nav__logo--img {
   width: 40px;
   height: 40px;
- margin-right: 12px;
+  margin-right: 12px;
 }
 
 .nav__logo {
@@ -89,43 +85,152 @@ nav .row {
   font-weight: 900;
   color: #243e63;
 }
+.nav__logo--name:hover {
+  color: #6415ff;
+}
+
 
 .nav__link {
   color: #243e63;
-  font-size: 0.875rem;
+  font-size: 14px;
   font-weight: 600;
+  margin: 0 24px;
+  padding-bottom: 4px;
+  transition: all 300ms ease;
 }
 
-.nav__link{
-    margin: 0 24px;
-    padding-bottom: 4px;
+.nav__link:hover {
+  color: #6415ff;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  text-decoration-thickness: 2px;
+  transition:all 300ms ease;
 }
 
-.nav__link:hover{
-    color: #6415FF;
-    text-decoration: underline;
+.nav__link--header1 {
+  margin: 0 24px 0 48px;
 }
-.nav__link--header1{
-    margin: 0 24px 0 48px;
+
+.nav__link--header2 {
+  border: 1px solid #6415ff;
+  padding: 12px 32px;
+  border-radius: 9999px;
+  color: white;
+  background-color: #6415ff;
 }
-.nav__link--header2{
-    border: 1px solid #6415FF;
-    padding: 12px 32px;
-    border-radius: 30px;
-    color: white;
-    background-color: #6415FF;
-}
-.nav__link--header2:hover{
-    opacity: .9;
-    color: rgb(237 242 247);
-    background-color: rgb(80 17 204);
-    text-decoration: none;
+.nav__link--header2:hover {
+  color: rgb(237 242 247);
+  background-color: rgb(80 17 204);
+  text-decoration: none;
 }
 
 /* 
-SECTION
+Landing Section
  */
 
 
- .
- }
+.landing__container {
+  padding: 96px 0;
+  display: flex;
+  margin: 0 auto;
+}
+
+
+.landing__container--left {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.landing__container--right{
+  width: 60%;
+}
+
+.landing__container--img{
+  width: 100%;
+}
+
+.landing__title {
+  font-size: 48px;
+}
+
+.landing__para {
+  font-size: 18px;
+  color: #243e63;
+  margin: 32px 0;
+}
+
+.landing__email {
+  position: relative;
+  display: inline-block;
+  padding-right: 64px;
+}
+
+.landing__email--input {
+  border: 2px solid rgba(128, 128, 128, 0.483);
+  border-radius: 9999px;
+  font-size: 16px;
+  color: rgba(211, 211, 211, 0.377);
+  padding: 20px 192px 20px 32px;
+  width: 100%;
+  opacity: .5;
+  transition: all 300ms ease;
+}
+
+.landing__email--input:hover{
+  border-color: rgb(46, 46, 46);
+}
+
+.landing__email--btn {
+  position: absolute;
+  background-color: #6415ff;
+  color: white;
+  padding: 16px 0;
+  width: 10rem;
+  margin: 8px 8px 8px 0;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 700;
+  border-radius: 9999px;
+  border: none;
+  top: 0px;
+  right: 64px;
+}
+
+.landing__email--btn:hover {
+  color: rgb(237 242 247);
+  background-color: rgb(80 17 204);
+}
+
+.landing__customers--container{
+  margin-top: 80px;
+}
+
+.landing__customers{
+  font-size: 12px;
+  color: #A0AEC0;
+  font-weight: 700;
+}
+
+.landing__customers--img{
+  margin: 16px 0 0 0;
+  padding: 0 128px 0 0;
+  width: 100%;opacity: .5;
+}
+
+/* Features */
+
+
+.features__container{
+  padding: 80px 0;
+  align-items: center;
+}
+
+.features__box--container{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.features__box{
+  width: calc(100%/3);
+}
