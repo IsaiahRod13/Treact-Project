@@ -177,8 +177,8 @@ Landing Section
 
 input[type="email"]:focus {
   color: #243e63;
-  border-color: #6415ff;
   opacity: 0.9;
+  border-color: #6415ff;
   font-weight: 500;
 }
 
@@ -233,6 +233,29 @@ input[type="email"]:focus {
   align-items: center;
 }
 
+.features__title--container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.features__title{
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.features__description{
+  font-size: 48px;
+}
+
+.features__para{
+  font-size: 16px;
+  margin-top: 16px;
+  text-align: center;
+  width: 40%;
+}
+
 .features__box--container {
   display: flex;
   flex-wrap: wrap;
@@ -242,3 +265,19 @@ input[type="email"]:focus {
   width: calc(100% / 3);
   display: flex;
 }
+
+.featured__img{
+  border: 2px solid #6415ff;
+  border-color: rgb(226, 232, 240);
+  padding: 20px;
+  border-radius: 99px;
+}
+.features__box--subtitle{
+  font-size: 24px;
+}
+
+.features__box--description{
+  font-size: 16px;
+}
+
+
