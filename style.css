@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;700;900&family=Lato:wght@400;700&family=Montserrat&display=swap');/* get more font sizes */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;700;900&family=Lato:wght@400;700&family=Montserrat&display=swap"); /* get more font sizes */
 /* Default */
 
 * {
@@ -50,7 +50,11 @@ ul {
   margin: 0 auto;
 }
 
-/* NAVIGATION */
+/* 
+
+NAVIGATION
+
+*/
 
 .nav__container {
   display: flex;
@@ -122,7 +126,9 @@ ul {
 }
 
 /* 
+
 Landing Section
+
  */
 
 .landing__container {
@@ -178,6 +184,7 @@ input[type="email"]:focus {
   opacity: 0.9;
   border-color: #6415ff;
   font-weight: 500;
+  outline: none;
 }
 
 .landing__email--input:hover {
@@ -224,7 +231,11 @@ input[type="email"]:focus {
   opacity: 0.5;
 }
 
-/* Features */
+/* 
+
+Features 
+
+*/
 
 .features__container {
   display: flex;
@@ -241,14 +252,13 @@ input[type="email"]:focus {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
 }
 
 .features__title {
   font-size: 16px;
   font-weight: 700;
   margin-bottom: 16px;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
 }
 
 .features__description {
@@ -320,34 +330,34 @@ input[type="email"]:focus {
   line-height: 2;
 }
 
-
 /* 
 
 QUALITY
 
 */
 
-.quality__container{
+.quality__container {
   display: flex;
   width: 100%;
   max-width: 1280px;
   padding: 96px 0;
 }
 
-.quality__container--left{
+.quality__container--left {
   width: 50%;
   display: flex;
   flex-direction: column;
-  padding: 32px 64px 32px 0;
+  padding: 0 64px 0 0;
+  justify-content: center;
 }
 
-.quality__title{
-letter-spacing: .1em;
-margin-bottom: 16px;
-font-weight: 700;
+.quality__title {
+  letter-spacing: 0.1em;
+  margin-bottom: 16px;
+  font-weight: 700;
 }
 
-.quality__subtitle{
+.quality__subtitle {
   color: #243e63;
   font-size: 48px;
   font-weight: 900;
@@ -355,38 +365,40 @@ font-weight: 700;
   letter-spacing: 1px;
 }
 
-.quality__para{
-color: #7c8BA1;
-font-size: 18px;
-font-weight: 500;
-margin-top: 16px;
-text-align: left;
-line-height: 1.625;
+.quality__para {
+  color: #7c8ba1;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 16px;
+  text-align: left;
+  line-height: 1.625;
 }
 
-.quality__btn{
-display:;
-border: 1px solid #6415ff;
-background-color: #6415ff;
-color: white;
-font-size: .875rem;
-font-weight: 700;
-border-radius: 9999px;
-margin-top: 32px;
-padding: 12px 32px;
-text-align: left;
-margin-left: 0px;
-margin-right: 0px;
+.quality__btn {
+  border: 1px solid #6415ff;
+  background-color: #6415ff;
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 700;
+  border-radius: 9999px;
+  margin-top: 32px;
+  padding: 12px 32px;
+  text-align: left;
+  /* margin-left: 0px; */
+  margin-right: auto;
+  transition: all 300ms ease;
 }
 
-.quality__btn:hover{
-
+.quality__btn:hover {
+  color: rgb(237 242 247);
+  background-color: rgb(80 17 204);
 }
 
-.quality__container--right{
+.quality__container--right {
   width: 50%;
+  display: flex;
 }
-.quality__container--right-img{
+.quality__container--right-img {
   max-width: 100%;
   height: auto;
   border: 1px solid #243e631a;
@@ -394,18 +406,85 @@ margin-right: 0px;
   vertical-align: middle;
 }
 
- .quality__img--dots{
-  position: absolute;
-  right: 0px;
-  bottom: 0px;
-  z-index: -10;
+.quality__img--dots {
+  position: relative;
+  fill: #6415ff;
+/*   right: 0px;
+  bottom: 0px; */
+  z-index: 10;
   height: 5rem;
   width: 5rem;
- }
+}
+
+/* 
+
+STEPS SECTION 
+
+*/
+
+.steps__container{
+  display: flex;
+  width: 100%;
+  max-width: 1280px;
+  padding: 96px 0;
+}
+
+.steps__container--left{
+  width: 50%;
+}
+
+.steps__img{
+  width: 100%;
+}
+
+.steps__img--dots{
+  position: relative;
+  display: block;
+  fill: #6415ff;
+  opacity: .15;
+  z-index: -10;
+  margin: 0 auto;
+  height: 10rem;
+  width: 10rem;
+  max-width: 100%;
+  max-height: 100%;
+  transform: translateY(-50%);
+}
 
 
+.steps__container--right{
+  width: 50%;
+  padding: 32px 0;
+  text-align: left;
+}
 
+.steps__title{
+letter-spacing: .1em;
+font-size: 16px;
+}
 
+.steps__subtitle{
+  margin-top: 16px;
+  color: #243e63;
+font-size: 48px;
+}
 
+.steps__intructions{
+  display: flex;
+  margin-top: 32px;
+}
 
+.steps__count{
+  font-size: 2.25rem;
+  font-weight: 600;
+  line-height: 1;
+  color: #cbd5e0;
+}
 
+.steps__instructions--title{
+
+}
+
+.steps__instructions--subtitle{
+
+}
