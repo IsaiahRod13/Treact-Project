@@ -579,19 +579,35 @@ Values
 }
 
 .values__principles {
-  width: 50%;
+  display: flex;
+  max-width: 50rem;
 }
 
-.values__principle {
+.values__principle--1 {
   margin: 32px 32px 0 0;
   align-content: baseline;
 }
 
-.values__principles--logo {
+.values__principle--2 {
+  margin: 32px 0 0 0;
+  align-content: baseline;
+}
+
+.values__principles--logo-1 {
   padding: 8px;
   color: #3a7c5b;
   background-color: #9ae69a;
   border-radius: 99px;
+  height: 36px;
+  width: 36px;
+}
+
+.values__principles--logo-2 {
+  padding: 8px;
+  display: inline-block;
+  color: #9B2C2C;
+  background-color: rgb(254 178 178);
+  border-radius: 9999px;
   height: 36px;
   width: 36px;
 }
@@ -644,3 +660,77 @@ Values
   display: inline-block;
   margin: auto 0;
 }
+
+/* 
+
+Pricing Section
+
+*/
+
+#pricing{
+
+}
+
+.pricing__container{
+  display: flex;
+  width: 100%;
+  max-width: 1280px;
+  padding: 96px 0;
+}
+.pricing__container--wrapper{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.pricing__header{
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricing__title{
+  color: #6415ff;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  margin-bottom: 16px;
+}
+
+.pricing__subtitle{
+  font-size: 48px;
+  text-align: center;
+  font-weight: 900;
+  letter-spacing: .025em;
+  color: #243e63;
+}
+
+.pricing__para{
+  color: #7c81a1;
+  font-size: 18px;
+  margin-top: 16px;
+  text-align: center;
+  max-width: 36rem;
+}
+
+.pricing__selection--wrapper{
+  display: flex;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  justify-content:space-around;
+  align-items: center;
+  margin: 0 auto;
+  }
+
+.pricing__personal{
+}
+
+
+
+
+
