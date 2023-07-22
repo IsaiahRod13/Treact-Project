@@ -22,6 +22,7 @@ a,
 button {
   text-decoration: none;
   cursor: pointer;
+  transition: all 300ms ease;
 }
 
 html {
@@ -605,7 +606,7 @@ Values
 .values__principles--logo-2 {
   padding: 8px;
   display: inline-block;
-  color: #9B2C2C;
+  color: #9b2c2c;
   background-color: rgb(254 178 178);
   border-radius: 9999px;
   height: 36px;
@@ -618,7 +619,7 @@ Values
   justify-content: left;
   font-size: 20px;
 }
-.values__principles--subtitle-title{
+.values__principles--subtitle-title {
   margin-left: 12px;
   color: #243e63;
   font-weight: 700;
@@ -630,7 +631,7 @@ Values
   margin-top: 16px;
 }
 
-.values__btn{
+.values__btn {
   background-color: #6415ff;
   color: white;
   border-radius: 9999px;
@@ -638,12 +639,13 @@ Values
   padding: 12px 32px;
   display: inline-block;
   margin-right: auto;
+  transition: all 300ms ease;
 }
 
-.values__btn:hover{
- background-color:#6415ff;
+.values__btn:hover {
+  color: rgb(237 242 247);
+  background-color: rgb(80 17 204);
 }
-
 
 .values__container--right {
   width: 50%;
@@ -667,49 +669,48 @@ Pricing Section
 
 */
 
-#pricing{
-
+#pricing {
 }
 
-.pricing__container{
+.pricing__container {
   display: flex;
   width: 100%;
   max-width: 1280px;
   padding: 96px 0;
 }
-.pricing__container--wrapper{
+.pricing__container--wrapper {
   display: flex;
   width: 100%;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;
 }
 
-.pricing__header{
+.pricing__header {
   margin-top: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.pricing__title{
+.pricing__title {
   color: #6415ff;
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   margin-bottom: 16px;
 }
 
-.pricing__subtitle{
+.pricing__subtitle {
   font-size: 48px;
   text-align: center;
   font-weight: 900;
-  letter-spacing: .025em;
+  letter-spacing: 0.025em;
   color: #243e63;
+  height: 72px;
 }
 
-.pricing__para{
+.pricing__para {
   color: #7c81a1;
   font-size: 18px;
   margin-top: 16px;
@@ -717,20 +718,120 @@ Pricing Section
   max-width: 36rem;
 }
 
-.pricing__selection--wrapper{
-  display: flex;
-  position: relative;
+.pricing__selection--wrapper {
   width: 100%;
+  display: flex;
   text-align: center;
-  justify-content:space-around;
-  align-items: center;
-  margin: 0 auto;
-  }
+  padding: 96px 0;
+}
 
-.pricing__personal{
+.pricing__personal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 24px;
+  width: calc(100% / 3);
+}
+
+.pricing__personal--top,
+.pricing__personal--middle,
+.pricing__personal--bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 0;
+  width: 100%;
+  border: 1px solid rgb(226, 232, 240);
+  display: flex;
+  line-height: 1.625;
+}
+.pricing__personal--highlight {
+  width: 100%;
+  top: 0;
+  border-radius: 8px 8px 0 0;
+  background: linear-gradient(
+    115deg,
+    rgb(56, 178, 172) 0%,
+    rgb(129, 230, 217) 100%
+  );
+  height: 8px;
+}
+
+.personal__top--title {
+  color: #1a202c;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.personal__top--cost {
+  color: #1a202c;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.personal__top--length {
+  color: #a0aec0;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+#pricing__middle--title {
+  color: #1a202c;
+  font-size: 20px;
+}
+
+#pricing__benefits {
+  color: #718096;
+  font-size: 16px;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+.pricing__personal--bottom {
+  padding: 32px 80px;
+  border-radius: 0 0 8px 8px;
+}
+
+.pricing__btn {
+  width: 100%;
+  padding: 16px 32px;
+}
+
+.pricing__personal--btn {
+  background: linear-gradient(
+    115deg,
+    rgb(56, 178, 172) 0%,
+    rgb(129, 230, 217) 100%
+  );
+  border-style: none;
+  border-radius: 999px;
+}
+
+.pricing__personal--btn,
+.pricing__enterprise--btn {
+  color: white;
+}
+
+.pricing__personal--btn:hover,
+.pricing__business--btn:hover,
+.pricing__enterprise--btn:hover {
+  box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.2);
+  transform: translate3D(1px, -1px, 0);
 }
 
 
+.pricing__business--top{
+  border-radius: 8px 8px 0 0;
+  padding-bottom: 40px;
+  background-color: #5764D1;
+}
 
+.pricing__business--header{
+  color: white;
+}
 
-
+.pricing__business--middle{
+  background-color: #5764D1;
+  border: none;
+}
