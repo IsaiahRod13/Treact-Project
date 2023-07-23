@@ -51,6 +51,12 @@ ul {
   margin: 0 auto;
 }
 
+.gradient__background {
+  background: linear-gradient(135deg, #4c51bf 0%, #667eea 100%);
+  color: white;
+}
+
+
 /* 
 
 NAVIGATION
@@ -779,6 +785,8 @@ Pricing Section
 #pricing__middle--title {
   color: #1a202c;
   font-size: 20px;
+  font-weight: 700;
+  letter-spacing: .025em;
 }
 
 #pricing__benefits {
@@ -811,6 +819,8 @@ Pricing Section
 .pricing__personal--btn,
 .pricing__enterprise--btn {
   color: white;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .pricing__personal--btn:hover,
@@ -820,18 +830,104 @@ Pricing Section
   transform: translate3D(1px, -1px, 0);
 }
 
+/* Business Pricing */
 
-.pricing__business--top{
-  border-radius: 8px 8px 0 0;
-  padding-bottom: 40px;
-  background-color: #5764D1;
+.pricing__business {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 24px;
+  width: calc(100% / 3);
+  color: white;
+  overflow: none;
 }
 
-.pricing__business--header{
+.color__white{
   color: white;
 }
 
-.pricing__business--middle{
-  background-color: #5764D1;
-  border: none;
+
+
+.pricing__business--top,
+.pricing__business--middle,
+.pricing__business--bottom {
+  border: 1px solid #667EEA;
+  background: linear-gradient(
+    135deg,
+    rgb(76, 81, 191) 0%,
+    rgb(102, 126, 234) 100%
+  );
+
 }
+
+.pricing__business--highlight {
+  width: 100%;
+  top: 0;
+  border-radius: 8px 8px 0 0;
+  background: linear-gradient(
+    135deg,
+    rgb(76, 81, 191) 0%,
+    rgb(102, 126, 234) 100%
+  );
+  height: 8px;
+}
+
+.pricing__business--top{
+  border-top: 1px transparent;
+}
+
+#pricing__benefits--business{
+  font-size: 16px;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+#pricing__middle--business {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: .025em;
+}
+
+.pricing__business--btn {
+  background-color: white;
+  color: rgb(70 15 179);
+  border-style: none;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.pricing__business--btn:hover {
+  color: rgb(70 15 179);
+}
+
+/* Enterprise pricing */
+.pricing__enterprise--highlight {
+  width: 100%;
+  top: 0;
+  border-radius: 8px 8px 0 0;
+  background: linear-gradient(
+    115deg,
+    rgb(245, 101, 101) 0%,
+    rgb(254, 178, 178) 100%
+  );
+  height: 8px;
+}
+
+.pricing__enterprise--btn {
+  background: linear-gradient(
+    115deg,
+    rgb(245, 101, 101) 0%,
+    rgb(254, 178, 178) 100%
+  );
+  border-style: none;
+  border-radius: 999px;
+}
+
+
+/* 
+
+TESTIMONIALS
+
+*/
