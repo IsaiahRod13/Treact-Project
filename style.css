@@ -1426,9 +1426,6 @@ Footer
   cursor: pointer;
 }
 
-.footer__social__link {
-}
-
 .footer__social {
   height: 32px;
   width: 32px;
@@ -1437,6 +1434,11 @@ Footer
   fill: black;
   background-color: white;
   border-radius: 99px;
+  transition: all 300ms ease;
+}
+
+.footer__social:hover{
+  background-color: rgb(203 213 224);
 }
 
 /* Media Changes */
